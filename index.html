@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <section class="inputs">
+        <div class="input">
+          <span class="input__label">DAY</span>
+          <input type="number" placeholder="DD" class="input__box" data-category="day">
+          <p>Must be a valid day</p>
+        </div>
+        <div class="input">
+          <span class="input__label">MONTH</span>
+          <input type="number" placeholder="MM" class="input__box" data-category="month">
+          <p>Must be a valid month</p>
+        </div>
+        <div class="input">
+          <span class="input__label">YEAR</span>
+          <input type="number" placeholder="YYYY" class="input__box" data-category="year">
+          <p>Must be in the past</p>
+        </div>
+      </section>
+      <section class="horizontal-line">
+        <div class="logo">
+          <img src="assets/images/icon-arrow.svg" alt="" />
+        </div>
+      </section>
+      <section class="age">
+        <span class="age__text"><span class="years">--</span>years</span>
+        <span class="age__text"><span class="months">--</span>months</span>
+        <span class="age__text"><span class="days">--</span>days</span>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
